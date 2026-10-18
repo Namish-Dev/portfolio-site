@@ -1,0 +1,353 @@
+{
+  "links": {
+    "github": "https://github.com/Namish-Dev",
+    "resume": "resume.pdf",
+    "email": "namishp16@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/namish-p-69a59b272"
+  },
+  "stats": {
+    "repos": 23
+  },
+  "exploring": [
+    "Linux",
+    "DevOps",
+    "AI agents",
+    "Production AI",
+    "Backend engineering"
+  ],
+  "projects": [
+    {
+      "label": "Open-world detection",
+      "title": "Open-world object detection",
+      "category": "AI / Computer vision",
+      "year": "2026",
+      "line": "A YOLOv8 detector that flags what it doesn't recognise as UNKNOWN, so a person can review it and the model can learn from the correction.",
+      "tech": [
+        "python",
+        "yolov8",
+        "pytorch",
+        "streamlit"
+      ],
+      "problem": "A standard detector only knows its training classes, so anything new gets a wrong label instead of a flag. On an aquarium marine-animal dataset, an unfamiliar animal is named incorrectly rather than set aside.",
+      "approach": "Detect with YOLOv8, treat low-confidence detections as UNKNOWN, and send those to a Streamlit screen where a person relabels them. The corrections become data for incremental retraining.",
+      "challenge": "Deciding where known ends and unknown begins. Confidence is only a proxy, so the threshold controls how much work reaches the reviewer.",
+      "links": [
+        [
+          "App code",
+          "https://github.com/Namish-Dev/Capstone-App"
+        ],
+        [
+          "Notebooks",
+          "https://github.com/Namish-Dev/Capstone"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "label": "Notebook RAG",
+      "title": "Notebook RAG",
+      "category": "GenAI / RAG",
+      "line": "A modular RAG application: document extraction, chunking, embeddings, vector search and retrieval, with a chat history store.",
+      "tech": [
+        "python",
+        "embeddings",
+        "vector search",
+        "gemini",
+        "cohere",
+        "openrouter"
+      ],
+      "problem": "Answering questions from your own documents takes more than a prompt. The text has to be extracted, split, embedded and searched first.",
+      "approach": "Separate modules for extraction, chunking, embedding, vector storage and retrieval, with Gemini, Cohere and OpenRouter clients and a store for chat history.",
+      "challenge": "Keeping each stage separate enough to test, since the repo has a tests folder, while the whole pipeline still works as one app.",
+      "links": [
+        [
+          "Code on GitHub",
+          "https://github.com/Namish-Dev/Notebook_RAG"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "label": "Research agent",
+      "title": "Research agent",
+      "category": "AI agents",
+      "status": "Learning project",
+      "line": "A trial of LangGraph concepts and the AI ideas I'd learnt, built as a research agent.",
+      "tech": [
+        "python",
+        "langgraph"
+      ],
+      "problem": "I wanted to learn how agent graphs work by building one rather than only reading about them.",
+      "approach": "A Python agent built with LangGraph concepts, as a trial of what I'd learnt so far.",
+      "challenge": "Moving from single prompts to an agent that carries state between steps.",
+      "links": [
+        [
+          "Code on GitHub",
+          "https://github.com/Namish-Dev/Research_Agent"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "label": "ML and data science",
+      "title": "ML and data science",
+      "category": "ML / Data science",
+      "line": "Prediction and segmentation projects, including the FlightPrice and ML-Project notebooks.",
+      "tech": [
+        "python",
+        "jupyter",
+        "machine learning"
+      ],
+      "links": [
+        [
+          "FlightPrice",
+          "https://github.com/Namish-Dev/FlightPrice"
+        ],
+        [
+          "ML-Project",
+          "https://github.com/Namish-Dev/ML-Project"
+        ],
+        [
+          "All repositories",
+          "https://github.com/Namish-Dev"
+        ]
+      ],
+      "featured": true
+    }
+  ],
+  "chapters": [
+    {
+      "tab": "Computer vision",
+      "h": "Detectors that know what they don't know.",
+      "p": "Open-world detection on an aquarium dataset: YOLOv8 finds the known animals, and anything it isn't sure about is flagged for a person to review.",
+      "btn": [
+        [
+          "Capstone-App →",
+          "https://github.com/Namish-Dev/Capstone-App"
+        ],
+        [
+          "Face recognition →",
+          "https://github.com/Namish-Dev/FaceRecognition"
+        ]
+      ],
+      "items": [
+        [
+          "Open-world detection",
+          "Low-confidence detections become UNKNOWN"
+        ],
+        [
+          "Human feedback",
+          "A Streamlit screen to review and relabel"
+        ],
+        [
+          "Incremental learning",
+          "Corrections feed retraining"
+        ]
+      ]
+    },
+    {
+      "tab": "GenAI and RAG",
+      "h": "Retrieval, from documents to answers.",
+      "p": "RAG systems that find the right passages before the model writes a word, including a policy assistant built during my internship.",
+      "btn": [
+        [
+          "Notebook_RAG →",
+          "https://github.com/Namish-Dev/Notebook_RAG"
+        ]
+      ],
+      "items": [
+        [
+          "Policy assistant, TechBharat",
+          "RAG chatbot with an internet and search layer"
+        ],
+        [
+          "Notebook_RAG",
+          "Extraction, chunking, embeddings, vector search, retrieval"
+        ],
+        [
+          "Model clients",
+          "Gemini, Cohere and OpenRouter in one app"
+        ]
+      ]
+    },
+    {
+      "tab": "Agents and backend",
+      "h": "Agents, and the systems around them.",
+      "p": "Learning agents by building them, and the backend pieces that make AI work usable: storage, APIs and databases.",
+      "btn": [
+        [
+          "Research_Agent →",
+          "https://github.com/Namish-Dev/Research_Agent"
+        ]
+      ],
+      "items": [
+        [
+          "Research_Agent",
+          "A trial of LangGraph and AI concepts I've learnt"
+        ],
+        [
+          "Notebook_RAG backend",
+          "A database and chat history store behind the RAG app"
+        ],
+        [
+          "Backend toolkit",
+          "FastAPI, SQLite, MySQL, Git, Linux"
+        ]
+      ]
+    },
+    {
+      "tab": "ML and data science",
+      "h": "Prediction and segmentation, from data to model.",
+      "p": "Machine-learning and data-science projects on structured data and images, from price prediction to segmentation, built in notebooks.",
+      "btn": [
+        [
+          "FlightPrice →",
+          "https://github.com/Namish-Dev/FlightPrice"
+        ],
+        [
+          "ML-Project →",
+          "https://github.com/Namish-Dev/ML-Project"
+        ]
+      ],
+      "items": [
+        [
+          "Prediction",
+          "Flight price prediction in the FlightPrice notebook"
+        ],
+        [
+          "Segmentation",
+          "Image segmentation projects"
+        ],
+        [
+          "Core toolkit",
+          "Python, scikit-learn, TensorFlow, PyTorch, OpenCV"
+        ]
+      ]
+    }
+  ],
+  "repos": [
+    [
+      "Capstone-App",
+      "Streamlit app for the open-world detection project",
+      "Capstone-App"
+    ],
+    [
+      "Capstone",
+      "Notebooks behind the detection capstone",
+      "Capstone"
+    ],
+    [
+      "Notebook_RAG",
+      "Modular RAG application with chat history",
+      "Notebook_RAG"
+    ],
+    [
+      "Research_Agent",
+      "A LangGraph agent trial",
+      "Research_Agent"
+    ],
+    [
+      "FlightPrice",
+      "Machine-learning notebook",
+      "FlightPrice"
+    ],
+    [
+      "ML-Project",
+      "Machine-learning notebook",
+      "ML-Project"
+    ]
+  ],
+  "tiles": [
+    [
+      "#6fb6f9,#1e7bf6",
+      "M2 9l10-5 10 5-10 5zM6 11v5c3 2 9 2 12 0v-5",
+      "B.Tech CSE (Data Science)",
+      "2026 graduate"
+    ],
+    [
+      "#c489fb,#8231e8",
+      "M3 8h18v12H3zM9 8V5h6v3M3 13h18",
+      "Applied AI Intern",
+      "TechBharat, Sep 2025 – Jan 2026"
+    ],
+    [
+      "#ff7a93,#f23049",
+      "M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12zM12 9a3 3 0 100 6 3 3 0 000-6z",
+      "Open-world detection",
+      "YOLOv8 with human review"
+    ],
+    [
+      "#4fde73,#1fb84a",
+      "M12 3l9 5-9 5-9-5zM3 13l9 5 9-5",
+      "RAG systems",
+      "Policy assistant and Notebook_RAG"
+    ],
+    [
+      "#ffd056,#f5a623",
+      "M8 7l-5 5 5 5M16 7l5 5-5 5",
+      "{repos} public repositories",
+      "github.com/Namish-Dev"
+    ]
+  ],
+  "stack": [
+    [
+      "AI / ML",
+      [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "OpenCV",
+        "YOLOv8"
+      ]
+    ],
+    [
+      "GenAI",
+      [
+        "RAG",
+        "Transformers",
+        "Embeddings",
+        "Qdrant",
+        "FAISS",
+        "LangGraph"
+      ]
+    ],
+    [
+      "Engineering",
+      [
+        "FastAPI",
+        "React",
+        "Streamlit",
+        "SQLite",
+        "MySQL",
+        "Git",
+        "Linux"
+      ]
+    ]
+  ],
+  "experience": [
+    {
+      "dates": "Sep 2025 – Jan 2026",
+      "role": "Applied AI Intern, TechBharat",
+      "bullets": [
+        "Worked on a policy assistant chatbot built on retrieval-augmented generation.",
+        "The assistant includes an internet and search layer for researching how other countries handle a policy.",
+        "The pipeline: documents are processed and embedded, retrieved by vector search, and passed to the LLM as context."
+      ]
+    }
+  ],
+  "about": [
+    [
+      "Then",
+      "Studying B.Tech CSE (Data Science). My first projects were machine-learning notebooks, then apps."
+    ],
+    [
+      "Now",
+      "A 2026 graduate and former Applied AI intern, building computer vision, RAG and agent projects."
+    ],
+    [
+      "The future",
+      "From notebooks to production AI: Linux, DevOps and backend engineering."
+    ]
+  ]
+}
